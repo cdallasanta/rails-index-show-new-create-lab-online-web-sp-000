@@ -1,1 +1,7 @@
-<%= form_tag new_coupon_path
+<%= form_tag new_coupon_path do %>
+  <label>Store Name:</label>
+  <%= text_field_tag coupon[:store] %>
+  <label>Coupon Code:</label>
+  <%= text_field_tag coupon[:coupon_code] %>
+
+<% end %>
