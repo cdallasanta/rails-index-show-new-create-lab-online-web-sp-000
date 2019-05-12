@@ -14,6 +14,6 @@ class CouponsController < ApplicationController
     coupon.store = params[:store]
     coupon.save
 
-    redirect_to :index
+    redirect_to coupons_path
   end
 end
